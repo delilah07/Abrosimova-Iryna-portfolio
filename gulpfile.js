@@ -107,6 +107,7 @@ exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = build;
+exports.deploy = deploy;
 
 exports.default = watchProject;
 
