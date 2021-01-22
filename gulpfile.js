@@ -11,7 +11,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const groupMedia = require('gulp-group-css-media-queries');
-var ghPages = require('gulp-gh-pages');
 
 function browsersync() {
     browserSync.init({
@@ -26,7 +25,7 @@ function browsersync() {
 function scripts(){
     return src([
         'node_modules/jquery/dist/jquery.js',
-        sourceFolder + '/js/*.js'
+        sourceFolder + '/js/!(script.min.js)'
     ])
     .pipe(concat('script.min.js'))
     .pipe(uglify())
@@ -80,7 +79,7 @@ function build() {
     return src([
         sourceFolder + '/css/**/*.css',
         sourceFolder + '/fonts/**/*',
-        sourceFolder + '/js/**/*.js',
+        sourceFolder + '/js/**/script.min.js',
         sourceFolder + '/*.html'
     ], {base:  sourceFolder})
     .pipe(dest(projectFolder))
@@ -90,11 +89,6 @@ function watching(){
     watch([ sourceFolder + '/scss/**/*.scss'], styles);
     watch([ sourceFolder + '/js/**/*.js',  '!' + sourceFolder + '/js/script.min.js'], scripts)
     watch([ sourceFolder + '/*.html']).on('change', browserSync.reload);
-}
-
-function deploy() {
-    return gulp.src('./' + projectFolder +'/**/*')
-      .pipe(ghPages());
 }
 
 let buildProject = series(cleanDist, parallel(styles, scripts, images), build);
@@ -107,7 +101,6 @@ exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
 exports.build = build;
-exports.deploy = deploy;
 
 exports.default = watchProject;
 
