@@ -1,99 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abrosimova Iryna</title>
-    <link rel="stylesheet" href="css/style.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
     <header class="header">
-        <nav class="header__nav nav-header">
-            <ul class="nav-header__list">
-                <li class="nav-header__item">
-                    <a href="#intro" class="nav-header__link link-nav active">
-                        <div class="link-nav__icon home">
-                            
-                        </div>
-                        <div class="link-nav__text">home</div>
-                    </a>
-                </li>
-                <li class="nav-header__item">
-                    <a href="#about" class="nav-header__link link-nav">
-                        <div class="link-nav__icon about">
-                            
-                        </div>
-                        <div class="link-nav__text">about</div>
-                    </a>
-                </li>
-                <li class="nav-header__item">
-                    <a href="#portfolio" class="nav-header__link link-nav">
-                        <div class="link-nav__icon portfolio"></div>
-                        <div class="link-nav__text">portfolio</div>
-                    </a>
-                </li>
-                <li class="nav-header__item">
-                    <a href="#contacts" class="nav-header__link link-nav">
-                        <div class="link-nav__icon contact"></div>
-                        <div class="link-nav__text">contact</div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="header__social social-header">
-            <ul class="social-header__list">
-                <li class="social-header__item">
-                    <a href="https://t.me/Delilah07" class="social-header__link telegram"  target="_blank" rel="noopener noreferrer"></a>
-                </li>
-                <li class="social-header__item">
-                    <a href="https://www.facebook.com/ira.abrossimova" class="social-header__link facebook"  target="_blank" rel="noopener noreferrer"></a>
-                </li>
-                <li class="social-header__item">
-                    <a href="https://github.com/delilah07" class="social-header__link github"  target="_blank" rel="noopener noreferrer"></a>
-                </li>
-            </ul>
-        </div>
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="header__nav nav-header">
+        <ul class="nav-header__list">
+          <li class="nav-header__item">
+            <a href="#intro" class="nav-header__link link-nav active">
+              <div class="link-nav__icon home"></div>
+              <div class="link-nav__text">home</div>
+            </a>
+          </li>
+          <li class="nav-header__item">
+            <a href="#about" class="nav-header__link link-nav">
+              <div class="link-nav__icon about"></div>
+              <div class="link-nav__text">about</div>
+            </a>
+          </li>
+          <li class="nav-header__item">
+            <a href="#portfolio" class="nav-header__link link-nav">
+              <div class="link-nav__icon portfolio"></div>
+              <div class="link-nav__text">portfolio</div>
+            </a>
+          </li>
+          <li class="nav-header__item">
+            <a href="#contact" class="nav-header__link link-nav">
+              <div class="link-nav__icon contact"></div>
+              <div class="link-nav__text">contact</div>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="main">
-        <section class="section section-intro" data-section-name="intro">
-            <div class="container">
-                <div class="section__wrapper">
-                    <div class="section__column">
-                        <h1 class="section-intro__title">Hi,<br>I’m Iryna</h1>
-                        <h3 class="section-intro__subtitle"><span class="text-animation">front-end</span> developer</h3>
-                        <a href="#contact" class="btn"><span>Contact me</span></a>
-                        <a href="/images/CV_Iryna_Abrosimova.pdf" target="_blank" rel="noopener noreferrer" class="btn"><span>My CV</span></a>
-                    </div>
-                    <div class="section__column">
-                        <div class="section-intro__hover hover-intro">
-                            <div class="hover-intro__text">freelance</div>
-                            <div class="hover-intro__text">dog lover</div>
-                            <div class="hover-intro__text">dfsdf</div>
-                            <div class="hover-intro__text">mother</div>
-                            <div class="hover-intro__text">amigurumist</div>
-                        </div>
-                    </div>
-                </div>
+      <section
+        class="section section-intro"
+        data-section-name="intro"
+        name="intro"
+      >
+        <div class="container">
+          <div class="section__wrapper">
+            <div class="section__column">
+              <h1 class="section-intro__title">Hi,<br />I’m Iryna</h1>
+              <h3 class="section-intro__subtitle">
+                <span class="text-animation">front-end</span> developer
+              </h3>
+              <a
+                href="javascript:document.querySelector('[name=contact]').scrollIntoView();"
+                class="btn"
+                ><span>Contact me</span></a
+              >
+              <a
+                href="/images/CV_Iryna_Abrosimova.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn"
+                ><span>My CV</span></a
+              >
             </div>
-        </section>
-        <section class="section section-about" data-section-name="about">
-            <div class="container">
-                <div class="section__wrapper">
-                    <h2 class="section-about__title">About me</h2>
-                    <p class="section-about__text">Hello, My name is Iryna Abrosimova and 
-                        I'm a Junior Front-end Developer working 
-                        and living in Krakow, Poland
-                    </p>
-                    <p class="section-about__text">Feel free to take a look at my latest projects on the <a href="#">web portfolio page</a>.</p>
-                    <button class="btn"><span>My skills</span></button>
-                    <button class="btn"><span>My Interests</span></button>
-                </div>
+            <div class="section__column">
+              <div class="section-intro__hover hover-intro">
+                <div class="hover-intro__text">designer</div>
+                <div class="hover-intro__text">freelance</div>
+                <div class="hover-intro__text">traveler</div>
+                <div class="hover-intro__text">amigurumist</div>
+                <div class="hover-intro__text">mother</div>
+                <div class="hover-intro__text">dog lover</div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section section-portfolio"
+        data-section-name="portfolio"
+        name="portfolio"
+      >
+        <div class="container">
+          <div class="section__wrapper">
+            <h2 class="section-portfolio__title">
+              My developer <span class="yellow">portfolio</span>
+            </h2>
+            <ul class="section-portfolio__nav nav-portfolio">
+              <li class="nav-portfolio__item">
+                <a class="nav-portfolio__link" href="#" data-filter="all"
+                  >Show all <span></span
+                ></a>
+              </li>
+              <li class="nav-portfolio__item">
+                <a class="nav-portfolio__link" href="#" data-filter="lp"
+                  >Landing Page <span></span
+                ></a>
+              </li>
+              <li class="nav-portfolio__item">
+                <a class="nav-portfolio__link" href="#" data-filter="promo"
+                  >Promo <span></span
+                ></a>
+              </li>
+              <li class="nav-portfolio__item">
+                <a class="nav-portfolio__link" href="#" data-filter="shop"
+                  >Online-Shop <span></span
+                ></a>
+              </li>
+              <li class="nav-portfolio__item">
+                <a class="nav-portfolio__link" href="#" data-filter="portal"
+                  >Portal <span></span
+                ></a>
+              </li>
+            </ul>
+            <div class="section-portfolio__gallery gallery-portfolio">
+              <!-- my portfolio -->
+              <div class="gallery-portfolio__item item-gallery" data-cat="lp">
+                <div
+                  class="item-gallery__image"
+                  data-modal="#modal__project-11"
+                >
+                  <img
+                    src="images/projects/my-portfolio.jpg"
+                    alt="view of site"
+                  />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a
+                      class="btn"
+                      href="https://github.com/delilah07/Abrosimova-Iryna-portfolio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      style="visibility: hidden"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- imperial -->
+              <div class="gallery-portfolio__item item-gallery" data-cat="lp">
+                <div
+                  class="item-gallery__image"
+                  data-modal="#modal__project-10"
+                >
+                  <img src="images/projects/imperial.jpg" alt="view of site" />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a
+                      class="btn"
+                      href="https://github.com/delilah07/Imperial"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://im.gsdev.site/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- bouquet -->
+              <div class="gallery-portfolio__item item-gallery" data-cat="lp">
+                <div class="item-gallery__image" data-modal="#modal__project-9">
+                  <img src="images/projects/bouquet.jpg" alt="view of site" />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a
+                      class="btn"
+                      href="https://github.com/delilah07/Food-Bouquet"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://delilah07.github.io/FoodBouquet-Live/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- cavacool -->
+              <div class="gallery-portfolio__item item-gallery" data-cat="shop">
+                <div class="item-gallery__image" data-modal="#modal__project-8">
+                  <img src="images/projects/cavacool.jpg" alt="view of site" />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a style="visibility: hidden" class="btn" href="#"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://http://cava.gsdev.site/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__center" style="display: none">
+                    <p>in progress</p>
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- hansgrohe -->
+              <div class="gallery-portfolio__item item-gallery" data-cat="shop">
+                <div class="item-gallery__image" data-modal="#modal__project-7">
+                  <img src="images/projects/hansgrohe.jpg" alt="view of site" />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a style="visibility: hidden" class="btn" href="#"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://shop.hansgrohe.com.ua/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- atc -->
+              <div
+                class="gallery-portfolio__item item-gallery"
+                data-cat="promo"
+              >
+                <div class="item-gallery__image" data-modal="#modal__project-6">
+                  <img src="images/projects/atc.jpg" alt="view of site" />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a style="visibility: hidden" class="btn" href="#"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://atcshipping.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <!-- <div class="item-gallery__center">
+                                    <p>in progress</p>
+                                </div> -->
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- geniustidio -->
+              <div
+                class="gallery-portfolio__item item-gallery"
+                data-cat="promo"
+              >
+                <div class="item-gallery__image" data-modal="#modal__project-5">
+                  <img
+                    src="images/projects/geniustudio.jpg"
+                    alt="view of site"
+                  />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a style="visibility: hidden" class="btn" href="#"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://geniustudio.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- coffeex -->
+              <div class="gallery-portfolio__item item-gallery" data-cat="shop">
+                <div class="item-gallery__image" data-modal="#modal__project-4">
+                  <img src="images/projects/coffeex.jpg" alt="view of site" />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a style="visibility: hidden" class="btn" href="#"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://coffeex.ru/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- coffice -->
+              <div class="gallery-portfolio__item item-gallery" data-cat="shop">
+                <div class="item-gallery__image" data-modal="#modal__project-3">
+                  <img src="images/projects/coffice.jpg" alt="view of site" />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a
+                      style="visibility: hidden"
+                      class="btn"
+                      href="#"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://coffice.ua/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- budagroplus -->
+              <div
+                class="gallery-portfolio__item item-gallery"
+                data-cat="promo"
+              >
+                <div class="item-gallery__image" data-modal="#modal__project-2">
+                  <img
+                    src="images/projects/budagroplus.jpg"
+                    alt="view of site"
+                  />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a
+                      class="btn"
+                      href="https://github.com/delilah07/BudAgroPlus"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View source</a
+                    >
+                    <a
+                      class="btn"
+                      href="https://budagroplus.com.ua/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >View online</a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+
+              <!-- kharkiv rada -->
+              <div
+                class="gallery-portfolio__item item-gallery"
+                data-cat="portal"
+              >
+                <div class="item-gallery__image" data-modal="#modal__project-1">
+                  <img
+                    src="images/projects/kharkiv rada.jpg"
+                    alt="view of site"
+                  />
+                </div>
+                <div class="item-gallery__content">
+                  <div class="item-gallery__top">
+                    <a class="btn" style="visibility: hidden" href="#"
+                      ><span>View source</span></a
+                    >
+                    <a
+                      class="btn"
+                      href="http://khrada.gov.ua//"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><span>View online</span></a
+                    >
+                  </div>
+                  <div class="item-gallery__bottom"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section-contact"
+        data-section-name="contact"
+        name="contact"
+      >
+        <div class="container">
+          <div class="section__wrapper">
+            <h2 class="section-contact__title">
+              Contact <span class="yellow">me</span>
+            </h2>
+            <div class="section__column">
+              <ul class="section-contact__list">
+                <li class="section-contact__item">
+                  <p>Phone</p>
+                  <a href="tel:+48576592766">+48 576 592 766</a>
+                </li>
+                <li class="section-contact__item">
+                  <p>E-mail</p>
+                  <a href="mailto:abrosimovairyna@gmail.com"
+                    >abrosimovairyna@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="section__column">
+              <h4 class="social-contact__title">Let's get social</h4>
+              <ul class="section-contact__social social-contact">
+                <li class="social-contact__item">
+                  <a
+                    href="https://linkedin.com/in/iryna-abrosimova-5933b4190"
+                    class="social-contact__link linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </li>
+                <li class="social-contact__item">
+                  <a
+                    href="https://t.me/Delilah07"
+                    class="social-contact__link telegram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </li>
+                <li class="social-contact__item">
+                  <a
+                    href="https://www.facebook.com/ira.abrossimova"
+                    class="social-contact__link facebook"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </li>
+                <li class="social-contact__item">
+                  <a
+                    href="https://github.com/delilah07"
+                    class="social-contact__link github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  ></a>
+                </li>
+              </ul>
+              <form
+                style="display: none"
+                action="#"
+                class="section-contact__form form-contact"
+              >
+                <h4 class="form-contact__title">Send a message</h4>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+                <div class="section__row">
+                  <div class="section__column">
+                    <input
+                      type="text"
+                      name="email"
+                      id="email"
+                      value=""
+                      placeholder="Your email"
+                      required
+                    />
+                  </div>
+                  <div class="section__column">
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      placeholder="Your phone"
+                    />
+                  </div>
+                </div>
+                <label for="comment">Your message</label>
+                <textarea name="comment" id="comment" required> </textarea>
+                <input type="submit" value="Send" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
-    
-    <div class="font-license" style="display: none;">Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+
+    <!--  Modals  -->
+    <div
+      class="modal modal__project"
+      id="modal__project-1"
+      style="display: none"
+    >
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close></button>
+        <div class="modal__work">
+          <div class="modal__work-preview">
+            <div data-slider="slick">
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="modal__work-content">
+            <div class="modal__work-header">
+              <h3 class="modal__work-title">Project title 1</h3>
+              <div class="modal__work-info">
+                category: app <span>|</span> 2018
+              </div>
+            </div>
+            <div class="modal__work-client">
+              <div>Client:</div>
+              <div>Creative Agency</div>
+            </div>
+            <div class="modal__work-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                molestias nemo quam, rerum expedita deleniti impedit
+                praesentium, quae est illo porro, distinctio dicta neque totam
+                ex nostrum soluta aspernatur aut quisquam ab repellat. Sint
+                voluptatibus eos rem incidunt, corporis velit, commodi delectus
+                adipisci, excepturi laudantium rerum, ipsa sapiente
+                perspiciatis? Incidunt?
+              </p>
+            </div>
+            <div class="modal__work-footer">
+              <button class="slickPrev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                Previous
+              </button>
+              <button class="slickNext">
+                Next
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal_project" id="modal_project-2" style="display: none">
+      <div class="modal__dialog">
+        <button class="modal__close" type="button" data-close>
+          <i class="fa fa-times-circle" aria-hidden="true"></i>
+        </button>
+        <div class="modal__work">
+          <div class="modal__work-preview">
+            <div data-slider="slick">
+              <div>
+                <img src="" alt="" />
+              </div>
+              <div>
+                <img src="" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="modal__work-content">
+            <div class="modal__work-header">
+              <h3 class="modal__work-title">Project title 2</h3>
+              <div class="modal__work-info">
+                category: website <span>|</span> 2018
+              </div>
+            </div>
+            <div class="modal__work-client">
+              <div>Client:</div>
+              <div>Creative Agency</div>
+            </div>
+            <div class="modal__work-text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa
+                molestias nemo quam, rerum expedita deleniti impedit
+                praesentium, quae est illo porro, distinctio dicta neque totam
+                ex nostrum soluta aspernatur aut quisquam ab repellat. Sint
+                voluptatibus eos rem incidunt, corporis velit, commodi delectus
+                adipisci, excepturi laudantium rerum, ipsa sapiente
+                perspiciatis? Incidunt?
+              </p>
+            </div>
+            <div class="modal__work-footer">
+              <button class="slickPrev">
+                <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                Previous
+              </button>
+              <button class="slickNext">
+                Next
+                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: none">
+      Icons made by
+      <a href="https://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+    <div class="font-license" style="display: none">
+      Font made from
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by
+      CC BY 3.0
+    </div>
     <script src="js/script.min.js"></script>
-</body>
+  </body>
 </html>
